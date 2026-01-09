@@ -7,8 +7,9 @@ export default function PriceItem({ title, price, index }: Price & { index: numb
     return (
         <motion.div
             initial={{ opacity: 0, x: -100 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: .5, delay: index * 0.1, type: 'spring', stiffness: 50 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: .5, type: 'spring', stiffness: 50 }}
             className='flex gap-5 justify-between items-end' >
             <div className='font-semibold py-0.5 pb-0 shrink-0'>
                 {title}

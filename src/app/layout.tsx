@@ -4,13 +4,13 @@ import "./globals.css";
 import { anabelle } from "./fonts";
 import 'swiper/css';
 import 'swiper/css/navigation';
+import ReactLenis, { useLenis } from "lenis/react";
+import LenisProvider from "@/providers/lenis";
 
 const geistSans = Noto_Sans({
   variable: "--font-noto-sans",
   subsets: ["latin"],
 });
-
-
 
 
 export const metadata: Metadata = {
@@ -23,12 +23,16 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+
+
   return (
     <html lang="en">
       <body
         className={`${geistSans.variable} ${anabelle.variable} antialiased`}
       >
-        {children}
+        <LenisProvider>
+          {children}
+        </LenisProvider>
       </body>
     </html >
   );
