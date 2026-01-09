@@ -20,6 +20,12 @@ const images = [
     nails4,
     nails5,
     nails6,
+    nails1,
+    nails2,
+    nails3,
+    nails4,
+    nails5,
+    nails6,
 ]
 const arrowStyles = 'bg-bardo w-12.5 h-12.5 rounded-lg flex items-center justify-center cursor-pointer'
 
@@ -58,8 +64,10 @@ export default function Portfolio() {
             </div>
             <Swiper
                 ref={swiperRef}
-                slidesPerView={4.5}
+                slidesPerView={4}
                 spaceBetween={30}
+                speed={500}
+                effect='coverflow'
                 navigation
                 className="mt-10"
             >

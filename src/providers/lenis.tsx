@@ -14,7 +14,7 @@ export default function LenisProvider({ children }: Props) {
 
     useEffect(() => {
         if (lenis) {
-            lenis.options.lerp = 0.15
+            lenis.options.lerp = 0.2
             lenis.options.duration = 1.2
         }
     }, [])

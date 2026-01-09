@@ -6,6 +6,7 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import ReactLenis, { useLenis } from "lenis/react";
 import LenisProvider from "@/providers/lenis";
+import Footer from "@/components/common/footer";
 
 const geistSans = Noto_Sans({
   variable: "--font-noto-sans",
@@ -32,6 +33,7 @@ export default function RootLayout({
       >
         <LenisProvider>
           {children}
+          <Footer />
         </LenisProvider>
       </body>
     </html >
