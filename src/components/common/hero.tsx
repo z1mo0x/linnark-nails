@@ -62,12 +62,12 @@ export default memo(function Hero() {
                     >
                         <Image src={nails1} alt="Работа 1" />
                     </motion.div>
-                    <div className="w-max mx-auto col-span-2 flex justify-center items-center flex-col">
+                    <div className="w-max mx-auto col-span-2 flex justify-center flex-col">
                         <motion.div
                             initial={{ y: 100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: .5, ease: 'linear' }}
-                            className="title text-7xl text-bardo">
+                            className="title text-7xl text-bardo pl-1">
                             Linnark
                         </motion.div>
                         <motion.div
