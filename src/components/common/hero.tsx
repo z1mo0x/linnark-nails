@@ -20,7 +20,7 @@ export default memo(function Hero() {
     const borderRadius = useTransform(
         scrollYProgress,
         [0, .5],
-        ['0%', '200%']
+        ['0%', '100%']
     )
 
     const y = useTransform(
