@@ -11,7 +11,7 @@ import nails6 from '../../images/nails-6.webp'
 import Image from "next/image";
 import { memo } from "react";
 
-const blockStyles = 'h-75 w-full rounded-lg overflow-hidden';
+const blockStyles = 'portfolio-item h-75 w-full rounded-lg';
 
 export default memo(function Hero() {
 
@@ -58,9 +58,9 @@ export default memo(function Hero() {
                         animate={{ y: 0, x: 0, opacity: 1 }}
                         transition={{ duration: .5, delay: .4 }}
                         style={{ scale }}
-                        className={`${blockStyles}`}
+                        className={`${blockStyles} rotate-x-[20px] rotate-y-[-10px] rotate-z-0`}
                     >
-                        <Image src={nails1} alt="Работа 1" />
+                        <Image src={nails1} alt="Работа рис. 1" />
                     </motion.div>
                     <div className="w-max mx-auto col-span-2 flex justify-center flex-col">
                         <motion.div
