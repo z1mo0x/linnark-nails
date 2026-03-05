@@ -67,7 +67,7 @@ export default memo(function Hero() {
                             initial={{ y: 100, opacity: 0 }}
                             animate={{ y: 0, opacity: 1 }}
                             transition={{ duration: .5, ease: 'linear' }}
-                            className="title text-7xl text-bardo pl-1">
+                            className="title text-7xl text-khaki pl-1">
                             Linnark
                         </motion.div>
                         <motion.div
@@ -82,7 +82,7 @@ export default memo(function Hero() {
                             animate={{ opacity: 1 }}
                             transition={{ duration: .5, delay: .5 }}
                         >
-                            <Button size='lg' className="px-15 box-border hover:bg-dark-bardo bg-bardo mt-10 w-full text-xl" asChild>
+                            <Button size='lg' className="px-15 box-border hover:bg-khaki/90 bg-khaki mt-10 w-full text-xl" asChild>
                                 <Link href='#'>Записаться</Link>
                             </Button>
                         </motion.div>

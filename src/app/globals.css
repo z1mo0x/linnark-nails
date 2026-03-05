@@ -59,6 +59,7 @@
   --color-parchment: var(--parchment);
   --color-bone: var(--bone);
   --color-khaki-beige: var(--khaki-beige);
+  --color-khaki: var(--khaki);
 
 
   /* custom colors */
@@ -112,6 +113,7 @@
   --parchment: #f5f1edff;
   --bone: #dad2bcff;
   --khaki-beige: #a99985ff;
+  --khaki: #283618;
 
   /* custom colors */
 }

@@ -7,7 +7,7 @@ import Prices from "@/components/ux/price/price";
 export default function Home() {
   return (
     <>
-      {/* <ColorPalette /> */}
+      <ColorPalette />
       <Hero />
       <Portfolio />
       <Prices />
